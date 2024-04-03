@@ -65,5 +65,17 @@ namespace Calculator_WinForms
             label2.Visible = true;
 
         }
+
+        private void linkLabelbutton_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the form you want to navigate to
+            Form4 anotherForm = new Form4();
+
+            // Show the new form
+            anotherForm.Show();
+
+            // Optionally, you can hide the current form if you want
+            this.Hide();
+        }
     }
 }

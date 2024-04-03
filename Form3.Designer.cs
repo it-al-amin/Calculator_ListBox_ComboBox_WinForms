@@ -37,6 +37,7 @@ namespace Calculator_WinForms
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.linkLabelbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HobbiesComboBox
@@ -139,11 +140,23 @@ namespace Calculator_WinForms
             this.label2.Text = "label2";
             this.label2.Visible = false;
             // 
+            // linkLabelbutton
+            // 
+            this.linkLabelbutton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabelbutton.Location = new System.Drawing.Point(459, 329);
+            this.linkLabelbutton.Name = "linkLabelbutton";
+            this.linkLabelbutton.Size = new System.Drawing.Size(313, 42);
+            this.linkLabelbutton.TabIndex = 8;
+            this.linkLabelbutton.Text = "Go To Link Label Page";
+            this.linkLabelbutton.UseVisualStyleBackColor = true;
+            this.linkLabelbutton.Click += new System.EventHandler(this.linkLabelbutton_Click);
+            // 
             // ComboBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.linkLabelbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -171,5 +184,6 @@ namespace Calculator_WinForms
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button linkLabelbutton;
     }
 }
